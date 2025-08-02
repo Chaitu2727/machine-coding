@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  color: white;
+  background-color: gray;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.side-content {
+  padding: 20px;
+}
+.side-right {
+  background-color: lightpink;
+}
+.side-left {
+  background-color: lightgreen;
+}
+.main-content {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-content,
+  .main-content {
+    text-align: center;
+    width: 100%;
+  }
+}
