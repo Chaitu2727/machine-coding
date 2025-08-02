@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.acc-container {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.section-item {
+  text-align: left;
+}
+.section-item h2 {
+  cursor: pointer;
+  margin: 0;
+  background-color: gray;
+  padding: 20px;
+}
+.section-content {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+.active {
+  max-height: fit-content;
+  display: block;
+  background-color: lightgray;
+  padding: 20px;
+}
