@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.form-body {
+  text-align: center;
+}
+.input-text {
+  font-size: 20px;
+  border: 1px solid gray;
+}
+.add-btn {
+  font-size: 20px;
+  color: white;
+  border: none;
+  background-color: violet;
+  cursor: pointer;
+}
+.list-items {
+  list-style: none;
+  padding-left: 0;
+}
+.list-item {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-btn-grp {
+  display: flex;
+  gap: 2px;
+}
+.list-btn {
+  border: none;
+  background-color: light-gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
