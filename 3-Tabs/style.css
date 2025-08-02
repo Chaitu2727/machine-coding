@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.tab-container {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid violet;
+}
+.tab-item {
+  padding: 10px;
+  transition: 0.3s ease-in;
+}
+.active {
+  background-color: violet;
+  color: white;
+}
+.tab-content {
+  padding: 10px;
+  background-color: lightgray;
+}
