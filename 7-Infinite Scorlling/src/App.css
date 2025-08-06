@@ -1,0 +1,32 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.products-container {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 10px;
+  justify-items: center;
+}
+
+.product-card {
+  text-align: center;
+
+  width: 100%;
+  border: 1px solid gray;
+}
+.stroke {
+  border-bottom: 1px solid gray;
+}
+p {
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  overflow: elipse;
+}
