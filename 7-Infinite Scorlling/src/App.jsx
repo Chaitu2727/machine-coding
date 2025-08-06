@@ -58,7 +58,7 @@ function App() {
           <div className="product-card" key={item.id}>
             <img src={item.thumbnail} alt={item.title} />
             <div className="stroke"></div>
-            <p>${item.title}</p>
+            <p>{item.title}</p>
           </div>
         ))}
       </div>

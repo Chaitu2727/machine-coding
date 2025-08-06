@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  height: 100px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.input-container {
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
