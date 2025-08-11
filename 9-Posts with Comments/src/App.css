@@ -1,0 +1,64 @@
+.layout-container {
+  padding: 20px;
+}
+.nav-bar {
+  padding: 30px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  text-decoration: inherit;
+  color: violet;
+}
+.active {
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.form-container {
+  width: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.input-field {
+  border: 1px solid #cccc;
+  padding: 5px;
+  font-size: 16px;
+}
+.input-field:focus {
+  outline: 2px solid #cccc;
+}
+.post-card {
+  border: 1px solid #cccc;
+  margin-bottom: 20px;
+}
+.text {
+  margin: 0;
+  padding: 10px;
+
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.button-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+.btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.btn-post {
+  background-color: #cccc;
+  color: #000;
+}
+.btn-comment {
+  color: darkgray;
+}
