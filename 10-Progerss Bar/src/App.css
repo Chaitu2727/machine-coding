@@ -1,0 +1,30 @@
+.app {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.progress-bar {
+  height: 30px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar span {
+  position: absolute;
+  z-index: 1;
+}
+.progress {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  background-color: green;
+  transition: width 0.3s ease-out;
+}
