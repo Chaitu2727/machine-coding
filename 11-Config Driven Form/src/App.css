@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+}
