@@ -1,0 +1,13 @@
+.star-rating {
+  font-size: 30px;
+  color: lightgray;
+}
+.star {
+  cursor: pointer;
+}
+.hovered {
+  color: gold;
+}
+.active {
+  color: orange;
+}
