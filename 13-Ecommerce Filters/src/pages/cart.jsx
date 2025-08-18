@@ -34,7 +34,7 @@ const Cart = () => {
       cart.filter((product) =>
         product.title.toLowerCase().includes(search.toLowerCase())
       ),
-    [search]
+    [search, cart]
   );
   return cart.length === 0 ? (
     <div className="flex flex-col gap-2 h-full justify-center items-center">
