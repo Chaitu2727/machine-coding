@@ -1,0 +1,64 @@
+//star rating
+.star-rating {
+  color: lightgray;
+}
+.star {
+  cursor: pointer;
+}
+.hovered {
+  color: gold;
+}
+.star-active {
+  color: orange;
+}
+//paginaation
+.pagination-container {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  background: none;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+}
+.btn:nth-child(1),
+.btn:nth-child(2) {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.btn:nth-last-child(1),
+.btn:nth-last-child(2) {
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.pagination-number {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-number:nth-child(3) {
+  border-left: 1px solid gray;
+}
+.pagination-number:not(:first-child) {
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.pagination-number:hover,
+.btn:hover:not(:disabled) {
+  background-color: #cccc;
+}
+.pagination-active {
+  background-color: #ccc;
+}
