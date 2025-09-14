@@ -39,12 +39,21 @@ function TicToe({ size = 3 }) {
     O: [],
   });
   const [reultPattern, setReultPattern] = useState([]);
+  const [count, setCount] = useState(0);
+  const [draw, setDraw] = useState(false);
 
   useEffect(() => {
     setReultPattern(generateResultPattern(size));
   }, [size]);
 
+  useEffect(() => {
+    if (count === size * size && !winner) {
+      setDraw(true);
+    }
+  }, [size, count, winner]);
+
   const winnerCalculations = (player, arr) => {
+    setCount((prev) => prev + 1);
     reultPattern.forEach((element) => {
       const winarr = arr.sort().filter((e) => element.includes(e));
 
@@ -78,12 +87,20 @@ function TicToe({ size = 3 }) {
     setXturn(true);
     setWinner("");
     setPlayerInputs({ ...playerInputs, X: [], O: [] });
+    setCount(0);
+    setDraw(false);
   };
 
   return (
     <div className="app" style={{ "--gridsize": size }}>
       <h1>Tic Tac Toe</h1>
-      {winner ? <p>{winner} is the Winner</p> : <p>{xturn ? "X" : "O"} Turn</p>}
+      {draw ? (
+        <p>Draw</p>
+      ) : winner ? (
+        <p>{winner} is the Winner</p>
+      ) : (
+        <p>{xturn ? "X" : "O"} Turn</p>
+      )}
       <button onClick={handleReset}>Reset</button>
       <div className="tic-tac-body">
         {buttonArray.map((value, index) => {
