@@ -30,9 +30,8 @@ const generateResultPattern = (size) => {
 };
 
 function TicToe({ size = 3 }) {
-  const array = Array(size * size).fill(null);
   const [winner, setWinner] = useState("");
-  const [buttonArray, setButtonArray] = useState(array);
+  const [buttonArray, setButtonArray] = useState(Array(size * size).fill(null));
   const [xturn, setXturn] = useState(true);
   const [playerInputs, setPlayerInputs] = useState({
     X: [],
@@ -44,6 +43,13 @@ function TicToe({ size = 3 }) {
 
   useEffect(() => {
     setReultPattern(generateResultPattern(size));
+    const newArray = Array(size * size).fill(null);
+    setButtonArray(newArray);
+    setPlayerInputs({ X: [], O: [] });
+    setWinner("");
+    setDraw(false);
+    setXturn(true);
+    setCount(0);
   }, [size]);
 
   useEffect(() => {
@@ -83,7 +89,8 @@ function TicToe({ size = 3 }) {
   };
 
   const handleReset = () => {
-    setButtonArray(array);
+    const newArray = Array(size * size).fill(null);
+    setButtonArray(newArray);
     setXturn(true);
     setWinner("");
     setPlayerInputs({ ...playerInputs, X: [], O: [] });
