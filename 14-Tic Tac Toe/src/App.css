@@ -1,0 +1,19 @@
+.app {
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+.tic-tac-body {
+  width: fit-content;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(var(--gridsize), 1fr);
+  place-items: center;
+}
+.grid-btn {
+  border: 1px solid gray;
+  width: 50px;
+  height: 50px;
+  background: light-gray;
+  cursor: pointer;
+}
